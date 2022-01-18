@@ -22,7 +22,12 @@ function Pizza(toppings, size, delivery){
     } else {
       alert ("Please select a size that you would prefer");
     }
-  } 
+  }
+  Pizza.prototype.calculateCost = function(tBasedAmt, sizeBasedAmt, deliveryAmount){
+    var totalCost = (tBasedAmt * sizeBasedAmt) + deliveryAmount ;
+    $("#displayTotalCost").html(totalCost);
+  }
+   
   var pizza;
   $(document).ready(function(){
     $("#formid").submit(function(event){
