@@ -1,4 +1,4 @@
-# Letuce Eat
+# Texas Pizza
 This is an online pizza website.
 
 ## Description
