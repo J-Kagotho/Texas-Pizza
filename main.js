@@ -22,4 +22,16 @@ function Pizza(toppings, size, delivery){
     } else {
       alert ("Please select a size that you would prefer");
     }
-  }  
+  } 
+  var pizza;
+  $(document).ready(function(){
+    $("#formid").submit(function(event){
+      event.preventDefault();
+      $("#show-Bill").show();
+      var inputtedAmount = parseInt($("#amount").val());
+      var toppingArray = [];
+      $("input:checkbox[name=toppingCheck]:checked").each(function(){
+       var inputtedToppings = $(this).val();
+       toppingArray.push(inputtedToppings);
+       $("#displayToppings").text(inputtedToppings);
+     });   
