@@ -32,6 +32,28 @@
         padding: 20px;
     }
 }
+#advert img{
+    width: 100%;
+}
+.col-md-8{
+    text-align: center;
+}
+#formid{
+    text-align: left;
+}
+.show-Bill{
+    padding-top: 40px;
+}
+@media only screen and (max-width: 800px) {
+            
+    #advert img{
+        padding: 20px;
+    }
+    .show-Bill{
+        padding-top: 10px;
+        
+    }
+}
 
 
 
