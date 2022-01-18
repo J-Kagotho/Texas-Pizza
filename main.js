@@ -34,4 +34,11 @@ function Pizza(toppings, size, delivery){
        var inputtedToppings = $(this).val();
        toppingArray.push(inputtedToppings);
        $("#displayToppings").text(inputtedToppings);
-     });   
+     });
+     
+     var crustArray = [];
+      $("input:checkbox[name=crustCheck]:checked").each(function(){
+       var inputtedCrust = $(this).val();
+       crustArray.push(inputtedCrust);
+       $("#displayCrust").text(inputtedCrust);
+     });        
