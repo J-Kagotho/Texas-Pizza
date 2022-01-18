@@ -12,6 +12,26 @@
 #advert img{
     width: 100%;
 }
+.col-md-8{
+    text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+    body{
+    padding-left: 0px;
+    padding-right: 0px;
+    }
+    #product .col-md{
+        padding-bottom: 10px;
+        height: auto;
+    }
+    #product{
+        padding-bottom: 0px;
+    }
+    #advert img{
+        padding: 20px;
+    }
+}
 
 
 
