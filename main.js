@@ -41,4 +41,19 @@ function Pizza(toppings, size, delivery){
        var inputtedCrust = $(this).val();
        crustArray.push(inputtedCrust);
        $("#displayCrust").text(inputtedCrust);
-     });        
+     });   
+     var inputtedSize =$("input:radio[name=sizePizza]:checked").val();
+     var inputtedDelivery =$("input:radio[name=delivery]:checked").val();
+     $("#displayAmount").text(inputtedAmount);
+     $("#displaySize").text(inputtedSize);
+     $("#displayDelivery").text(inputtedDelivery);
+  
+     pizza = new Pizza(toppingArray,inputtedSize,inputtedDelivery);
+  
+     var toppingBasedAmt = inputtedAmount;
+     
+     var deliveryAmount = pizza.deliveryAmount();
+     var sizeBasedAmt = pizza.sizeBasedAmount();
+     pizza.calculateCost(toppingBasedAmt , sizeBasedAmt , deliveryAmount);
+    });
+  });          
